@@ -277,4 +277,3 @@ Link:  https://github.com/pYro-sudo/lab2ppois4sem/tree/main/lab2ppois4sem/src/ma
 - ```Student``` is a wrapper for students.
 - ```Mother``` is a wrapper for mother.
 - ```Father``` is a wrapper for father.
--  
