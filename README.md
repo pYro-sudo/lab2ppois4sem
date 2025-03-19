@@ -42,7 +42,7 @@ create table father_info
 );
 ```
 
-## Mother (DLL)
+## Mother (DDL)
 
 ```
 create table mother_info
@@ -62,7 +62,7 @@ create table mother_info
 );
 ```
 
-## Student (DLL)
+## Student (DDL)
 
 ```
 create table student_info
