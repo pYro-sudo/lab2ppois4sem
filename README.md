@@ -129,8 +129,8 @@ module by.losik.lab2ppois4sem {
         <class>by.losik.lab2ppois4sem.model.Form</class>
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/lab2ppois4sem"/>
-            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
-            <property name="jakarta.persistence.jdbc.password" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.user" value="#{user}"/>
+            <property name="jakarta.persistence.jdbc.password" value="#{password}"/>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="true"/>
