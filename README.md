@@ -278,7 +278,7 @@ Link:  https://github.com/pYro-sudo/lab2ppois4sem/tree/main/lab2ppois4sem/src/ma
 - ```Mother``` is a wrapper for mother.
 - ```Father``` is a wrapper for father.
 
-Link: Link:  https://github.com/pYro-sudo/lab2ppois4sem/tree/main/lab2ppois4sem/src/main/java/by/losik/lab2ppois4sem/viewcontroller
+Link:  https://github.com/pYro-sudo/lab2ppois4sem/tree/main/lab2ppois4sem/src/main/java/by/losik/lab2ppois4sem/viewcontroller
 
 - ```Action``` is used to define the action in controller.
 - ```HelloController``` is a controller.
