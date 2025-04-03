@@ -123,6 +123,8 @@ module by.losik.lab2ppois4sem {
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.jdbc.batch_size" value="50"/>
+            <property name="hibernate.order_inserts" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>
