@@ -89,6 +89,7 @@ module by.losik.lab2ppois4sem {
     requires org.testng;
     requires org.hibernate.orm.core;
     requires jakarta.transaction;
+    requires org.slf4j;
 
     opens by.losik.lab2ppois4sem.model to org.hibernate.orm.core;
 
