@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="by.losik.lab2ppois4sem.controller.DisplayController"
+      maxHeight="600.0" prefWidth="600.0">
+    <StackPane>
+        <VBox fx:id="tableBox" prefHeight="600">
+            <TableView fx:id="formTableView" maxWidth="600">
+                <columns>
+                    <TableColumn fx:id="form_id" text="Form id"/>
+                    <TableColumn fx:id="student_name" text="Student name"/>
+                    <TableColumn fx:id="student_surname" text="Student surname"/>
+                    <TableColumn fx:id="student_father_name" text="Student father name"/>
+                    <TableColumn fx:id="father_name" text="Father name"/>
+                    <TableColumn fx:id="father_surname" text="Father surname"/>
+                    <TableColumn fx:id="father_father_name" text="Father father name"/>
+                    <TableColumn fx:id="mother_name" text="Mother name"/>
+                    <TableColumn fx:id="mother_surname" text="Mother surname"/>
+                    <TableColumn fx:id="mother_father_name" text="Mother father name"/>
+                    <TableColumn fx:id="father_salary" text="Father salary"/>
+                    <TableColumn fx:id="mother_salary" text="Mother salary"/>
+                    <TableColumn fx:id="brothers" text="Brothers"/>
+                    <TableColumn fx:id="sisters" text="Sisters"/>
+                </columns>
+                <tooltip>
+                    <Tooltip text="This is all data provided with specified action. It is not editable" />
+                </tooltip>
+            </TableView>
+            <TilePane>
+                <Button onAction="#jumpToFirst" text="First" maxWidth="70" minWidth="70">
+                    <tooltip>
+                        <Tooltip text="Click to move to the first page." />
+                    </tooltip>
+                </Button>
+                <Button onAction="#moveToPrevious" text="Previous" maxWidth="70" minWidth="70">
+                    <tooltip>
+                        <Tooltip text="Click to move to the previous page." />
+                    </tooltip>
+                </Button>
+                <TextField fx:id="shownPage" maxWidth="50" minWidth="50" maxHeight="20" minHeight="20" text="0" editable="false">
+                    <tooltip>
+                        <Tooltip text="The current page." />
+                    </tooltip>
+                </TextField>
+                <Button onAction="#moveToNext" text="Next" maxWidth="70" minWidth="70">
+                    <tooltip>
+                        <Tooltip text="Click to move to the next page." />
+                    </tooltip>
+                </Button>
+                <Button onAction="#jumpToLast" text="Last" maxWidth="70" minWidth="70">
+                    <tooltip>
+                        <Tooltip text="Click to move to the last page." />
+                    </tooltip>
+                </Button>
+            </TilePane>
+        </VBox>
+        <VBox fx:id="treeBox" prefHeight="600" visible="false">
+            <TreeView fx:id="treeView" maxWidth="600">
+                <tooltip>
+                    <Tooltip text="This is all data provided with specified action. It is not editable" />
+                </tooltip>
+            </TreeView>
+        </VBox>
+    </StackPane>
+</VBox>

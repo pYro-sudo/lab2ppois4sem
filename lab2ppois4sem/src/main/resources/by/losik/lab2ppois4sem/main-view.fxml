@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.media.MediaView?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.losik.lab2ppois4sem.controller.MainController">
+    <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+    <TilePane hgap="5">
+        <VBox maxWidth="650" spacing="20">
+            <Text layoutX="10" layoutY="30" text="Welcome!">
+                <font>
+                    <Font name="System Italic" size="24.0" />
+                </font>
+            </Text>
+            <Line endX="600" />
+            <TilePane hgap="10" maxWidth="600">
+                <Button maxWidth="70" minWidth="70" onAction="#onHelpButtonClick" text="Help">
+                    <tooltip>
+                        <Tooltip text="Get help" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="70" minWidth="70" onAction="#onAddButtonClick" text="Add">
+                    <tooltip>
+                        <Tooltip text="Click to add new form" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="70" minWidth="70" onAction="#onSearchButtonClick" text="Search">
+                    <tooltip>
+                        <Tooltip text="Click to search forms" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="70" minWidth="70" onAction="#onDeleteButtonClick" text="Delete">
+                    <tooltip>
+                        <Tooltip text="Click to delete forms" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="70" minWidth="70" onAction="#onShowAllAction" text="Show all">
+                    <tooltip>
+                        <Tooltip text="Click to see all forms" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="70" minWidth="70" onAction="#onSaveXMLAction" text="Save XML">
+                    <tooltip>
+                        <Tooltip text="Click to save the forms in XML" />
+                    </tooltip>
+                </Button>
+                <Button maxWidth="80" minWidth="70" onAction="#onShowXMLAction" text="Show XML">
+                    <tooltip>
+                        <Tooltip text="Click to see the forms in XML" />
+                    </tooltip>
+                </Button>
+            </TilePane>
+            <Line endX="600" />
+            <TextArea fx:id="textArea" editable="false" maxWidth="600" minHeight="300" prefHeight="310.0" prefWidth="600.0">
+                <tooltip>
+                    <Tooltip text="This is where you get the instructions after clicking the buttons. It is not editable" />
+                </tooltip>
+            </TextArea>
+        </VBox>
+        <VBox spacing="5">
+            <TilePane hgap="5">
+                <VBox spacing="5">
+                    <Label text="Select view option:" />
+                    <ChoiceBox fx:id="treeOrTable" minWidth="70">
+                        <String fx:value="Table" />
+                        <String fx:value="Tree" />
+                        <tooltip>
+                            <Tooltip text="Choose to define which view you prefer" />
+                        </tooltip>
+                    </ChoiceBox>
+                </VBox>
+                <VBox spacing="5">
+                    <Label text="Select page size:" />
+                    <ChoiceBox fx:id="paginationFactor" minWidth="70">
+                        <Integer fx:value="5" />
+                        <Integer fx:value="10" />
+                        <Integer fx:value="15" />
+                        <Integer fx:value="20" />
+                        <tooltip>
+                            <Tooltip text="Choose to define the amount of items shown" />
+                        </tooltip>
+                    </ChoiceBox>
+                </VBox>
+            </TilePane>
+            <fx:include fx:id="displayView" source="display-view.fxml" />
+        </VBox>
+    </TilePane>
+    <MediaView fx:id="mv"/>
+    <Button text="Exit" onAction="#onExitAction">
+        <tooltip>
+            <Tooltip text="Exit the application" />
+        </tooltip>
+    </Button>
+</VBox>
