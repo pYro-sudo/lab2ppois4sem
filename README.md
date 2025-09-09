@@ -2,7 +2,7 @@
 
 # Problem
 
-Make the application, that is built on MVVM pattern and take account of all the forms.
+Make the application, that is built on MVC pattern and take account of all the forms.
 
 ## ```pom.xml```
 
